@@ -1,8 +1,15 @@
 $navbar-default-bg: #A9D3FF;
 
 
+
+
 @import "bootstrap-sprockets";
 @import "bootstrap";
+@import 'https://fonts.googleapis.com/css?family=Lato';
+
+* {
+    font-family: Lato, sans-serif;
+}
 
 
 #logo {
@@ -48,4 +55,9 @@ small {
 .footer {
     margin-top: 35px;
     padding-top: 5px;
+}
+
+.article-title {
+    font-weight: 300;
+    font-size: 1.5em;
 }
