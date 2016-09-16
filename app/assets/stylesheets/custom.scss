@@ -62,3 +62,17 @@ small {
     list-style: none;
     padding-left: 0;
 }
+
+.badge a {
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    font-weight: bold;
+}
+
+.input_checkbox {
+    width: auto !important;
+}
+.badge a:hover {
+    color: white;
+}

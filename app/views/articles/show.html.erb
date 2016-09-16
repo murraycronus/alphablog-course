@@ -1,4 +1,4 @@
-<h2 align="center"> Title: <%= @article.title %></h2> <h4>by <%= @article.user.username %></h4>
+<h1 align="center"> Title: <%= @article.title %></h1> <h4>by <%= @article.user.username %></h4>
 <div class="well col-xs-8 col-xs-offset-2">
     <ul class="listing">
             <div class="row center">
@@ -14,6 +14,10 @@
     <hr>
         <%= simple_format(@article.description) %>
         
+    <hr>
+    <% if @article.categories.any? %>
+        <p>Categories: <%= render @article.categories %></p>
+    <% end %>
     <hr>
     
         <div class="article-actions">
